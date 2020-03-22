@@ -154,18 +154,14 @@
        <param-name>allowedOrigins</param-name>
        <param-value>*</param-value>
    </init-param>
-        <init-param>
-            <param-name>allowedMethods</param-name>
-            <param-value>GET,POST,DELETE,PUT,HEAD,OPTIONS</param-value>
-        </init-param>
-        <init-param>
-            <param-name>allowedHeaders</param-name>
-            <param-value>Accept, Origin, X-Requested-With, Content-Type, Last-Modified, Authorization</param-value>
-        </init-param>
-        <init-param>
-            <param-name>exposedHeaders</param-name>
-            <param-value>Access-Control-Allow-Origin,Access-Control-Allow-Credentials</param-value>
-        </init-param>
+   <init-param>
+       <param-name>allowedMethods</param-name>
+       <param-value>*</param-value>
+   </init-param>
+   <init-param>
+       <param-name>allowedHeaders</param-name>
+       <param-value>*</param-value>
+   </init-param>
   </filter>
   <filter-mapping>
     <filter-name>cross-origin</filter-name>
