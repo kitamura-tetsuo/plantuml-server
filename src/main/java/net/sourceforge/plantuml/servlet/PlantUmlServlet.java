@@ -122,7 +122,6 @@ public class PlantUmlServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
             IOException {
         request.setCharacterEncoding("UTF-8");
-        response.addHeader("Access-Control-Allow-Origin", "*");
 
         String text = request.getParameter("text");
         String encoded = DEFAULT_ENCODED_TEXT;

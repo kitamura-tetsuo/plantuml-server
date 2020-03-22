@@ -1,7 +1,6 @@
 FROM maven:3.6-jdk-8 AS builderjetty
 
 COPY pom.xml /app/
-COPY crossdomain.xml /app/
 COPY src /app/src/
 
 WORKDIR /app
