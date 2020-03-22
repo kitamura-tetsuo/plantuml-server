@@ -71,6 +71,7 @@ public abstract class UmlDiagramService extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
+    response.addHeader("Access-Control-Allow-Origin", "*");
         // build the UML source from the compressed request parameter
         final String[] sourceAndIdx = getSourceAndIdx(request);
         final int idx = Integer.parseInt(sourceAndIdx[1]);

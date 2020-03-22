@@ -121,6 +121,7 @@ public class PlantUmlServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
             IOException {
+    response.addHeader("Access-Control-Allow-Origin", "*");
         request.setCharacterEncoding("UTF-8");
 
         String text = request.getParameter("text");
